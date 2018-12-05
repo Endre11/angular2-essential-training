@@ -16,18 +16,4 @@ import { Component } from "@angular/core";
                                           //takes an array of string
                                           //stylesUrl also takes array
 })
-export class AppComponent {
-  onMediaItemDelete(mediaItem) {
-
-  }
-
-  firstMediaItem = {
-      id: 1,
-      name: "Firebug",
-      medium: "Series",
-      category: "Science Fiction",
-      year: 2010,
-      watchedOn: null,
-      isFavorite: false
-  };
-}
+export class AppComponent {}
