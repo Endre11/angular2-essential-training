@@ -17,6 +17,10 @@ import { Component } from "@angular/core";
                                           //stylesUrl also takes array
 })
 export class AppComponent {
+  onMediaItemDelete(mediaItem) {
+    
+  }
+
   firstMediaItem = {
       id: 1,
       name: "Firebug",
