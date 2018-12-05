@@ -1,3 +1,7 @@
+//for app.component.html
+// -> [mediaItem]="firstMediaItem" -> In this syntax, the mediaItem, which is the input property from the mediaItem component, is the binding target, because it's on the left of the equal sign. 
+//The first mediaItem property from the app component is the binding source, which is to the right of the equal sign.
+
 import { Component } from "@angular/core";
 
 @Component({
@@ -12,4 +16,14 @@ import { Component } from "@angular/core";
                                           //takes an array of string
                                           //stylesUrl also takes array
 })
-export class AppComponent {}
+export class AppComponent {
+  firstMediaItem = {
+      id: 1,
+      name: "Firebug",
+      medium: "Series",
+      category: "Science Fiction",
+      year: 2010,
+      watchedOn: 1294166565384,
+      isFavorite: false
+  };
+}
