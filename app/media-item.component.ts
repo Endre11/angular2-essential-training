@@ -1,5 +1,9 @@
 //for media-item.component.html -> property binding uses []
 //    -> event binding uses () -> angular pattern looks for the event name without the 'on' for native DOM elements (for example: you bind to the 'onDelete' element by leaving out the 'on')
+//    -> structure directive -> changes the DOM (fe: ngIf)
+//    -> *ngIf -> the '*' is shorthand for <ng-template [ng-if]="mediaItem.watchedOn"></ng-template> -> it lets us to put the ngIf directly on the element
+//          -> ng-template is handled by angular, won't be part of the DOM
+
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
